@@ -15,11 +15,19 @@ npm install --save @wharfkit/starter
 
 ## Usage
 
-You can then import any of the main Wharfkit modules in your application.
+You can then import any of the main Wharfkit modules in your application:
 
 ```ts
 import SessionKit from '@wharfkit/session';
 import ContractKit from '@wharfkit/contract';
 import AccountKit from '@wharfkit/account';
 // or any other Wharfkit module
+```
+
+You can also import a pre-configured `sessionKit` instance that is ready to use:
+
+```ts
+import { sessionKit } from '@wharfkit/starter';
+
+await sessionKit.login();
 ```
