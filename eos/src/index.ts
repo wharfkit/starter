@@ -1,17 +1,35 @@
-import { SessionKit } from "@wharfkit/session"
-import { WebRenderer } from "@wharfkit/web-renderer"
-import { WalletPluginAnchor } from "@wharfkit/wallet-plugin-anchor"
+export * from "@wharfkit/starter"
 
-const args = {
+import {
+  AccountKit,
+  APIClient,
+  Chains,
+  ContractKit,
+  SessionKit,
+  TransactPluginResourceProvider,
+  WalletPluginAnchor,
+  WebRenderer
+} from "@wharfkit/starter"
+import { WalletPluginWombat } from "@wharfkit/wallet-plugin-wombat"
+
+const chainUrl = "https://eos.greymass.com"
+
+export const sessionKit = new SessionKit({
   appName: "WharfKit App",
   chains: [
     {
       id: "aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906",
-      url: "https://eos.greymass.com",
+      url: chainUrl,
     },
   ],
   ui: new WebRenderer(),
-  walletPlugins: [new WalletPluginAnchor()],
-}
+  walletPlugins: [new WalletPluginAnchor(), new WalletPluginWombat()],
+}, {
+  transactPlugins: [new TransactPluginResourceProvider()],
+})
 
-export const sessionKit = new SessionKit(args)
+export const accountKit = new AccountKit(Chains.EOS)
+
+export const contractKit = new ContractKit({
+  client: new APIClient({ url: chainUrl })
+})

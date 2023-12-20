@@ -1,8 +1,18 @@
-import { SessionKit } from "@wharfkit/session"
+export * from "@wharfkit/session"
+export * from "@wharfkit/web-renderer"
+export * from "@wharfkit/wallet-plugin-anchor"
+export * from "@wharfkit/account"
+export * from "@wharfkit/contract"
+export * from "@wharfkit/token"
+export * from "@wharfkit/transact-plugin-resource-provider"
+export * from "@wharfkit/account-creation-plugin-anchor"
+
 import { WebRenderer } from "@wharfkit/web-renderer"
 import { WalletPluginAnchor } from "@wharfkit/wallet-plugin-anchor"
+import { SessionKit } from "@wharfkit/session"
+import { TransactPluginResourceProvider } from "@wharfkit/transact-plugin-resource-provider"
 
-const args = {
+export const sessionKit = new SessionKit({
   appName: "WharfKit App",
   chains: [
     {
@@ -24,6 +34,6 @@ const args = {
   ],
   ui: new WebRenderer(),
   walletPlugins: [new WalletPluginAnchor()],
-}
-
-export const sessionKit = new SessionKit(args)
+}, {
+  transactPlugins: [new TransactPluginResourceProvider()],
+})
