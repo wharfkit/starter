@@ -1,17 +1,35 @@
-import { SessionKit } from "@wharfkit/session"
-import { WebRenderer } from "@wharfkit/web-renderer"
-import { WalletPluginAnchor } from "@wharfkit/wallet-plugin-anchor"
+export * from "@wharfkit/starter"
 
-const args = {
+import {
+  AccountKit,
+  API,
+  APIClient,
+  Chains,
+  ContractKit,
+  SessionKit,
+  TransactPluginResourceProvider,
+  WalletPluginAnchor,
+  WebRenderer
+} from "@wharfkit/starter"
+
+const chainUrl = "https://jungle4.greymass.com"
+
+export const sessionKit = new SessionKit({
   appName: "WharfKit App",
   chains: [
     {
       id: "73e4385a2708e6d7048834fbc1079f2fabb17b3c125b146af438971e90716c4d",
-      url: "https://jungle4.greymass.com",
+      url: chainUrl,
     },
   ],
   ui: new WebRenderer(),
   walletPlugins: [new WalletPluginAnchor()],
-}
+}, {
+  transactPlugins: [new TransactPluginResourceProvider()],
+})
 
-export const sessionKit = new SessionKit(args)
+export const accountKit = new AccountKit(Chains.Jungle4)
+
+export const contractKit = new ContractKit({
+  client: new APIClient({ url: chainUrl })
+})
