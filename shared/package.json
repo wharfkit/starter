@@ -18,7 +18,7 @@
         "build": "make lib"
     },
     "dependencies": {
-        "@wharfkit/session": "^1.2.1",
+        "@wharfkit/session": "^1.2.2",
         "@wharfkit/account": "^1.0.0",
         "@wharfkit/token": "^1.0.1",
         "@wharfkit/web-renderer": "^1.1.0",

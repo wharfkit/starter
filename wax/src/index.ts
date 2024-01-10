@@ -1,9 +1,9 @@
 export * from "@wharfkit/starter"
 
 import {
-  AccountKit,
+  // AccountKit,
   APIClient,
-  Chains,
+  // Chains,
   ContractKit,
   SessionKit,
   TransactPluginResourceProvider,
@@ -23,12 +23,17 @@ export const sessionKit = new SessionKit({
     },
   ],
   ui: new WebRenderer(),
-  walletPlugins: [new WalletPluginAnchor(), new WalletPluginCloudWallet()],
+  walletPlugins: [
+    new WalletPluginAnchor(),
+    new WalletPluginCloudWallet()
+  ],
 }, {
   transactPlugins: [new TransactPluginResourceProvider()],
 })
 
-export const accountKit = new AccountKit(Chains.WAX)
+// Uncomment once we can get the Account Kit to work with rush monorepos
+// see https://github.com/microsoft/TypeScript/issues/42873
+// export const accountKit = new AccountKit(Chains.WAX)
 
 export const contractKit = new ContractKit({
   client: new APIClient({ url: chainUrl })

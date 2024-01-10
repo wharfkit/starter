@@ -1,16 +1,16 @@
 export * from "@wharfkit/starter"
 
 import {
-  AccountKit,
+  // AccountKit,
   APIClient,
-  Chains,
+  // Chains,
   ContractKit,
   SessionKit,
   TransactPluginResourceProvider,
   WalletPluginAnchor,
   WebRenderer
 } from "@wharfkit/starter"
-import { WalletPluginWombat } from "@wharfkit/wallet-plugin-wombat"
+import { WalletPluginWombat } from "@wharfkit/wallet-plugin-wombat" // Uncomment once the Wombat plugin is updated to the latest version of the Session Kit
 
 const chainUrl = "https://eos.greymass.com"
 
@@ -23,12 +23,17 @@ export const sessionKit = new SessionKit({
     },
   ],
   ui: new WebRenderer(),
-  walletPlugins: [new WalletPluginAnchor(), new WalletPluginWombat()],
+  walletPlugins: [
+    new WalletPluginAnchor(),
+    new WalletPluginWombat(),
+  ],
 }, {
   transactPlugins: [new TransactPluginResourceProvider()],
 })
 
-export const accountKit = new AccountKit(Chains.EOS)
+// Uncomment once we can get the Account Kit to work with rush monorepos
+// see https://github.com/microsoft/TypeScript/issues/42873
+// export const accountKit = new AccountKit(Chains.EOS) 
 
 export const contractKit = new ContractKit({
   client: new APIClient({ url: chainUrl })
