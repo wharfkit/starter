@@ -49,3 +49,5 @@ Publish all packages with the following commands:
 rush change
 rush publish --apply
 ```
+
+For more information on publishing packages, see the [Rush documentation](https://rushjs.io/pages/maintainer/publishing/).
