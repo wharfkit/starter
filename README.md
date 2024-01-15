@@ -46,6 +46,7 @@ rush build
 Publish all packages with the following commands:
 
 ```bash
+export NPM_TOKEN=<your npm token>
 rush change # generate change files
 rush version --bump # bump package versions
 rush publish --apply # publish packages
