@@ -11,23 +11,28 @@
   "projects": [
     {
       "packageName": "@wharfkit/starter",
-      "projectFolder": "shared"
+      "projectFolder": "shared",
+      "shouldPublish": true
     },
     {
       "packageName": "@wharfkit/starter-jungle",
-      "projectFolder": "jungle"
+      "projectFolder": "jungle",
+      "shouldPublish": true
     },
     {
       "packageName": "@wharfkit/starter-eos",
-      "projectFolder": "eos"
+      "projectFolder": "eos",
+      "shouldPublish": true
     },
     {
       "packageName": "@wharfkit/starter-wax",
-      "projectFolder": "wax"
+      "projectFolder": "wax",
+      "shouldPublish": true
     },
     {
       "packageName": "@wharfkit/starter-telos",
-      "projectFolder": "telos"
+      "projectFolder": "telos",
+      "shouldPublish": true
     }
   ],
   "repository": {
