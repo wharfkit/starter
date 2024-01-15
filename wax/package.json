@@ -19,7 +19,7 @@
     },
     "dependencies": {
         "@wharfkit/starter": "workspace:*",
-        "@wharfkit/wallet-plugin-cloudwallet": "../../wallet-plugin-cloudwallet"
+        "@wharfkit/wallet-plugin-cloudwallet": "^1.2.0"
     },
     "devDependencies": {
         "@rollup/plugin-alias": "^3.1.4",
