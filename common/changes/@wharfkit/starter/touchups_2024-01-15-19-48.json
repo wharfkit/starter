@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@wharfkit/starter",
+      "comment": "added sessionKit instance and missing plugins",
+      "type": "minor"
+    }
+  ],
+  "packageName": "@wharfkit/starter"
+}
