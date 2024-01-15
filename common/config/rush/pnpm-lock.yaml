@@ -5,41 +5,6 @@ importers:
   .:
     specifiers: {}
 
-  ../../eos:
-    specifiers:
-      '@rollup/plugin-alias': ^3.1.4
-      '@rollup/plugin-commonjs': ^22.0.0
-      '@rollup/plugin-json': ^4.1.0
-      '@rollup/plugin-node-resolve': ^14.1.0
-      '@rollup/plugin-typescript': ^10.0.1
-      '@rollup/plugin-virtual': ^2.0.3
-      '@wharfkit/starter': workspace:*
-      '@wharfkit/wallet-plugin-wombat': ../../wallet-plugin-wombat
-      rollup: ^2.70.2
-      rollup-plugin-cleanup: ^3.2.1
-      rollup-plugin-dts: ^4.2.1
-      rollup-plugin-terser: ^7.0.2
-      ts-node: ^10.9.1
-      tsconfig-paths: ^4.1.1
-      typescript: ^4.1.2
-    dependencies:
-      '@wharfkit/starter': link:../shared
-      '@wharfkit/wallet-plugin-wombat': link:../../wallet-plugin-wombat
-    devDependencies:
-      '@rollup/plugin-alias': 3.1.9_rollup@2.79.1
-      '@rollup/plugin-commonjs': 22.0.2_rollup@2.79.1
-      '@rollup/plugin-json': 4.1.0_rollup@2.79.1
-      '@rollup/plugin-node-resolve': 14.1.0_rollup@2.79.1
-      '@rollup/plugin-typescript': 10.0.1_rollup@2.79.1+typescript@4.9.5
-      '@rollup/plugin-virtual': 2.1.0_rollup@2.79.1
-      rollup: 2.79.1
-      rollup-plugin-cleanup: 3.2.1_rollup@2.79.1
-      rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.5
-      rollup-plugin-terser: 7.0.2_rollup@2.79.1
-      ts-node: 10.9.1_typescript@4.9.5
-      tsconfig-paths: 4.2.0
-      typescript: 4.9.5
-
   ../../jungle:
     specifiers:
       '@rollup/plugin-alias': ^3.1.4
@@ -83,6 +48,7 @@ importers:
       '@rollup/plugin-virtual': ^2.0.3
       '@wharfkit/account': ^1.0.0
       '@wharfkit/account-creation-plugin-anchor': ^1.3.1
+      '@wharfkit/antelope': ^1.0.3
       '@wharfkit/contract': ^1.0.0
       '@wharfkit/session': ^1.2.2
       '@wharfkit/token': ^1.0.1
@@ -99,6 +65,7 @@ importers:
     dependencies:
       '@wharfkit/account': 1.0.0
       '@wharfkit/account-creation-plugin-anchor': 1.3.1_@wharfkit+session@1.2.2
+      '@wharfkit/antelope': 1.0.3
       '@wharfkit/contract': 1.1.1
       '@wharfkit/session': 1.2.2
       '@wharfkit/token': 1.0.1
@@ -138,41 +105,6 @@ importers:
       typescript: ^4.1.2
     dependencies:
       '@wharfkit/starter': link:../shared
-    devDependencies:
-      '@rollup/plugin-alias': 3.1.9_rollup@2.79.1
-      '@rollup/plugin-commonjs': 22.0.2_rollup@2.79.1
-      '@rollup/plugin-json': 4.1.0_rollup@2.79.1
-      '@rollup/plugin-node-resolve': 14.1.0_rollup@2.79.1
-      '@rollup/plugin-typescript': 10.0.1_rollup@2.79.1+typescript@4.9.5
-      '@rollup/plugin-virtual': 2.1.0_rollup@2.79.1
-      rollup: 2.79.1
-      rollup-plugin-cleanup: 3.2.1_rollup@2.79.1
-      rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.5
-      rollup-plugin-terser: 7.0.2_rollup@2.79.1
-      ts-node: 10.9.1_typescript@4.9.5
-      tsconfig-paths: 4.2.0
-      typescript: 4.9.5
-
-  ../../wax:
-    specifiers:
-      '@rollup/plugin-alias': ^3.1.4
-      '@rollup/plugin-commonjs': ^22.0.0
-      '@rollup/plugin-json': ^4.1.0
-      '@rollup/plugin-node-resolve': ^14.1.0
-      '@rollup/plugin-typescript': ^10.0.1
-      '@rollup/plugin-virtual': ^2.0.3
-      '@wharfkit/starter': workspace:*
-      '@wharfkit/wallet-plugin-cloudwallet': ../../wallet-plugin-cloudwallet
-      rollup: ^2.70.2
-      rollup-plugin-cleanup: ^3.2.1
-      rollup-plugin-dts: ^4.2.1
-      rollup-plugin-terser: ^7.0.2
-      ts-node: ^10.9.1
-      tsconfig-paths: ^4.1.1
-      typescript: ^4.1.2
-    dependencies:
-      '@wharfkit/starter': link:../shared
-      '@wharfkit/wallet-plugin-cloudwallet': link:../../wallet-plugin-cloudwallet
     devDependencies:
       '@rollup/plugin-alias': 3.1.9_rollup@2.79.1
       '@rollup/plugin-commonjs': 22.0.2_rollup@2.79.1
@@ -426,7 +358,7 @@ packages:
   /@wharfkit/abicache/1.2.1:
     resolution: {integrity: sha512-LPlD8U/+QUkXDqYrr2DRUa+VFUCR+muNOLUN1Uh3+TU2pbr4uKSt9EOBf3VkEAVov5BA96exysWCD1sp+K7orw==}
     dependencies:
-      '@wharfkit/antelope': 1.0.2
+      '@wharfkit/antelope': 1.0.3
       '@wharfkit/signing-request': 3.1.0
       pako: 2.1.0
       tslib: 2.6.2
@@ -445,8 +377,8 @@ packages:
   /@wharfkit/account/1.0.0:
     resolution: {integrity: sha512-I+5iT0DnE0oYQm9v/E+VIgyN+zd1jy8bbaJGxV2rAmHBPn48NKO9PV0EGWgZ8pfNvx/Tf5fG1kZpIbmTQ8Q+8A==}
     dependencies:
-      '@wharfkit/antelope': 1.0.2
-      '@wharfkit/common': 1.2.0_@wharfkit+antelope@1.0.2
+      '@wharfkit/antelope': 1.0.3
+      '@wharfkit/common': 1.2.0_@wharfkit+antelope@1.0.3
       '@wharfkit/contract': 1.1.1
       '@wharfkit/resources': 1.2.0
       '@wharfkit/token': 1.0.1
@@ -463,8 +395,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@wharfkit/antelope/1.0.2:
-    resolution: {integrity: sha512-Oad6w0xg+3DyKqOhXcpEiyhZXizcoqdKX0UO6+YsjMZ4+qs16++Uq2YcxUeOHTpSeh2RM4EtX8qijyF5JzUg4w==}
+  /@wharfkit/antelope/1.0.3:
+    resolution: {integrity: sha512-ZoSswmOEWu9U0OqwBfs4G8+dbdPyrVMBQugfveg/eTMMyWeHuKXSvEXgefPhBHmY3Q9uXWweYZeXrF/SoWPoNQ==}
     dependencies:
       bn.js: 4.12.0
       brorand: 1.1.0
@@ -474,12 +406,12 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@wharfkit/common/1.2.0_@wharfkit+antelope@1.0.2:
+  /@wharfkit/common/1.2.0_@wharfkit+antelope@1.0.3:
     resolution: {integrity: sha512-me/BN8D/4UPkY7yt+4v+E/z62PVj4VKY5+iRb7zoWv0epbW4o4nC6Oer8kBVL7xWC6Guucaol3hkxkTMgrnwlQ==}
     peerDependencies:
       '@wharfkit/antelope': ^1.0.0
     dependencies:
-      '@wharfkit/antelope': 1.0.2
+      '@wharfkit/antelope': 1.0.3
       tslib: 2.6.2
     dev: false
 
@@ -487,7 +419,7 @@ packages:
     resolution: {integrity: sha512-WN6tzVuuacpzD8yo4uZZPdniXk9Q+ZGkBtUQ+mbeOQaEzrsnncOrHJlck20nmSb/EC8ij1EG0xlhnyhKjnvSYQ==}
     dependencies:
       '@wharfkit/abicache': 1.2.1
-      '@wharfkit/antelope': 1.0.2
+      '@wharfkit/antelope': 1.0.3
       '@wharfkit/signing-request': 3.1.0
       tslib: 2.6.2
     dev: false
@@ -510,7 +442,7 @@ packages:
   /@wharfkit/resources/1.2.0:
     resolution: {integrity: sha512-ZJx+U3BQLHzmCR0ASSuoI74X0Cdq3iiFD1fueBeF02E9nlFiw831SPD9lOrp90c9aKleniMzJdF68ygDfO7Nng==}
     dependencies:
-      '@wharfkit/antelope': 1.0.2
+      '@wharfkit/antelope': 1.0.3
       bn.js: 4.12.0
       tslib: 2.6.2
     dev: false
@@ -519,8 +451,8 @@ packages:
     resolution: {integrity: sha512-tkeuTq8AltJmVj7uos04vKhgNL7gFuq0VnrE7E+mAVFqpatr6XVT5/ShWrQxCDubHXraKK6nnZ6inUlETQkc9w==}
     dependencies:
       '@wharfkit/abicache': 1.2.1
-      '@wharfkit/antelope': 1.0.2
-      '@wharfkit/common': 1.2.0_@wharfkit+antelope@1.0.2
+      '@wharfkit/antelope': 1.0.3
+      '@wharfkit/common': 1.2.0_@wharfkit+antelope@1.0.3
       '@wharfkit/signing-request': 3.1.0
       pako: 2.1.0
       tslib: 2.6.2
@@ -529,14 +461,14 @@ packages:
   /@wharfkit/signing-request/3.1.0:
     resolution: {integrity: sha512-aVWV9Z3o77uDrFSR3wC78c1e/QNkfi3IxZbGzMizvoYTYPKHgHs1F6Go/1oe0Dlo/kEB9tgckFviccUqrK987w==}
     dependencies:
-      '@wharfkit/antelope': 1.0.2
+      '@wharfkit/antelope': 1.0.3
       tslib: 2.6.2
     dev: false
 
   /@wharfkit/token/1.0.1:
     resolution: {integrity: sha512-vwGaNiZvVf2X64BQLcObF5TxVZhmym1l6vQsNlTrNA225EhLEY15FI8W2HJ9/TrrTj3ZjPbzXtnQWedGsc41wg==}
     dependencies:
-      '@wharfkit/antelope': 1.0.2
+      '@wharfkit/antelope': 1.0.3
       '@wharfkit/contract': 1.1.1
       bn.js: 4.12.0
       tslib: 2.6.2

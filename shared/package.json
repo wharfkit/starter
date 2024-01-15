@@ -18,6 +18,7 @@
         "build": "make lib"
     },
     "dependencies": {
+        "@wharfkit/antelope": "^1.0.3",
         "@wharfkit/session": "^1.2.2",
         "@wharfkit/account": "^1.0.0",
         "@wharfkit/token": "^1.0.1",
