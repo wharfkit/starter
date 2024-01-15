@@ -40,3 +40,12 @@ Build all packages with the following command:
 ```bash
 rush build
 ```
+
+### Publishing Packages
+
+Publish all packages with the following commands:
+
+```bash
+rush change
+rush publish --apply
+```
