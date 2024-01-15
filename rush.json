@@ -29,5 +29,8 @@
       "packageName": "@wharfkit/starter-telos",
       "projectFolder": "telos"
     }
-  ]
+  ],
+  "repository": {
+    "url": "git@github.com:wharfkit/starter.git"
+  }
 }
