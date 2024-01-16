@@ -1,7 +1,7 @@
 {
     "name": "@wharfkit/starter-eos",
     "description": "A starter-eos kit for WharfKit packages",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "homepage": "https://github.com/@wharfkit/starter-eos",
     "license": "BSD-3-Clause",
     "main": "lib/starter-eos.js",
