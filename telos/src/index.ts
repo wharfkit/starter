@@ -1,17 +1,38 @@
-import { SessionKit } from "@wharfkit/session"
-import { WebRenderer } from "@wharfkit/web-renderer"
-import { WalletPluginAnchor } from "@wharfkit/wallet-plugin-anchor"
+export * from "@wharfkit/starter"
 
-const args = {
+import {
+  // AccountKit,
+  APIClient,
+  // Chains,
+  ContractKit,
+  SessionKit,
+  TransactPluginResourceProvider,
+  WalletPluginAnchor,
+  WebRenderer
+} from "@wharfkit/starter"
+
+const chainUrl = "https://telos.greymass.com"
+
+export const sessionKit = new SessionKit({
   appName: "WharfKit App",
   chains: [
     {
       id: "4667b205c6838ef70ff7988f6e8257e8be0e1284a2f59699054a018f743b1d11",
-      url: "https://telos.greymass.com",
+      url: chainUrl,
     },
   ],
   ui: new WebRenderer(),
   walletPlugins: [new WalletPluginAnchor()],
-}
+}, {
+  transactPlugins: [new TransactPluginResourceProvider()],
+})
 
-export const sessionKit = new SessionKit(args)
+// Uncomment once we can get the Account Kit to work with rush monorepos
+// see https://github.com/microsoft/TypeScript/issues/42873
+// export const accountKit = new AccountKit(Chains.Telos)
+
+export const contractKit = new ContractKit({
+  client: new APIClient({ url: chainUrl })
+})
+
+

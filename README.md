@@ -40,3 +40,16 @@ Build all packages with the following command:
 ```bash
 rush build
 ```
+
+### Publishing Packages
+
+Publish all packages with the following commands:
+
+```bash
+export NPM_TOKEN=<your npm token>
+rush change # generate change files
+rush version --bump # bump package versions
+rush publish --publish --apply # publish packages
+```
+
+For more information on publishing packages, see the [Rush documentation](https://rushjs.io/pages/maintainer/publishing/).

@@ -14,6 +14,7 @@ importers:
       '@rollup/plugin-typescript': ^10.0.1
       '@rollup/plugin-virtual': ^2.0.3
       '@wharfkit/starter': workspace:*
+      '@wharfkit/wallet-plugin-wombat': ^1.2.1
       rollup: ^2.70.2
       rollup-plugin-cleanup: ^3.2.1
       rollup-plugin-dts: ^4.2.1
@@ -23,6 +24,7 @@ importers:
       typescript: ^4.1.2
     dependencies:
       '@wharfkit/starter': link:../shared
+      '@wharfkit/wallet-plugin-wombat': 1.2.2
     devDependencies:
       '@rollup/plugin-alias': 3.1.9_rollup@2.79.1
       '@rollup/plugin-commonjs': 22.0.2_rollup@2.79.1
@@ -34,7 +36,7 @@ importers:
       rollup-plugin-cleanup: 3.2.1_rollup@2.79.1
       rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.5
       rollup-plugin-terser: 7.0.2_rollup@2.79.1
-      ts-node: 10.9.1_typescript@4.9.5
+      ts-node: 10.9.2_typescript@4.9.5
       tsconfig-paths: 4.2.0
       typescript: 4.9.5
 
@@ -67,7 +69,7 @@ importers:
       rollup-plugin-cleanup: 3.2.1_rollup@2.79.1
       rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.5
       rollup-plugin-terser: 7.0.2_rollup@2.79.1
-      ts-node: 10.9.1_typescript@4.9.5
+      ts-node: 10.9.2_typescript@4.9.5
       tsconfig-paths: 4.2.0
       typescript: 4.9.5
 
@@ -81,13 +83,12 @@ importers:
       '@rollup/plugin-virtual': ^2.0.3
       '@wharfkit/account': ^1.0.0
       '@wharfkit/account-creation-plugin-anchor': ^1.3.1
+      '@wharfkit/antelope': ^1.0.3
       '@wharfkit/contract': ^1.0.0
-      '@wharfkit/session': ^1.2.1
+      '@wharfkit/session': ^1.2.2
       '@wharfkit/token': ^1.0.1
       '@wharfkit/transact-plugin-resource-provider': ^1.1.0
       '@wharfkit/wallet-plugin-anchor': ^1.1.0
-      '@wharfkit/wallet-plugin-cloudwallet': ^1.1.0
-      '@wharfkit/wallet-plugin-wombat': ^1.1.0
       '@wharfkit/web-renderer': ^1.1.0
       rollup: ^2.70.2
       rollup-plugin-cleanup: ^3.2.1
@@ -98,15 +99,14 @@ importers:
       typescript: ^4.1.2
     dependencies:
       '@wharfkit/account': 1.0.0
-      '@wharfkit/account-creation-plugin-anchor': 1.3.1_@wharfkit+session@1.2.1
-      '@wharfkit/contract': 1.1.1
-      '@wharfkit/session': 1.2.1
+      '@wharfkit/account-creation-plugin-anchor': 1.3.1_@wharfkit+session@1.2.2
+      '@wharfkit/antelope': 1.0.4
+      '@wharfkit/contract': 1.1.2
+      '@wharfkit/session': 1.2.2
       '@wharfkit/token': 1.0.1
-      '@wharfkit/transact-plugin-resource-provider': 1.1.0_@wharfkit+session@1.2.1
-      '@wharfkit/wallet-plugin-anchor': 1.1.0_@wharfkit+session@1.2.1
-      '@wharfkit/wallet-plugin-cloudwallet': 1.1.0_@wharfkit+session@1.2.1
-      '@wharfkit/wallet-plugin-wombat': 1.1.0_@wharfkit+session@1.2.1
-      '@wharfkit/web-renderer': 1.1.1_@wharfkit+session@1.2.1
+      '@wharfkit/transact-plugin-resource-provider': 1.1.0_@wharfkit+session@1.2.2
+      '@wharfkit/wallet-plugin-anchor': 1.1.0_@wharfkit+session@1.2.2
+      '@wharfkit/web-renderer': 1.1.5_@wharfkit+session@1.2.2
     devDependencies:
       '@rollup/plugin-alias': 3.1.9_rollup@2.79.1
       '@rollup/plugin-commonjs': 22.0.2_rollup@2.79.1
@@ -118,7 +118,7 @@ importers:
       rollup-plugin-cleanup: 3.2.1_rollup@2.79.1
       rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.5
       rollup-plugin-terser: 7.0.2_rollup@2.79.1
-      ts-node: 10.9.1_typescript@4.9.5
+      ts-node: 10.9.2_typescript@4.9.5
       tsconfig-paths: 4.2.0
       typescript: 4.9.5
 
@@ -151,7 +151,7 @@ importers:
       rollup-plugin-cleanup: 3.2.1_rollup@2.79.1
       rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.5
       rollup-plugin-terser: 7.0.2_rollup@2.79.1
-      ts-node: 10.9.1_typescript@4.9.5
+      ts-node: 10.9.2_typescript@4.9.5
       tsconfig-paths: 4.2.0
       typescript: 4.9.5
 
@@ -164,6 +164,7 @@ importers:
       '@rollup/plugin-typescript': ^10.0.1
       '@rollup/plugin-virtual': ^2.0.3
       '@wharfkit/starter': workspace:*
+      '@wharfkit/wallet-plugin-cloudwallet': ^1.2.0
       rollup: ^2.70.2
       rollup-plugin-cleanup: ^3.2.1
       rollup-plugin-dts: ^4.2.1
@@ -173,6 +174,7 @@ importers:
       typescript: ^4.1.2
     dependencies:
       '@wharfkit/starter': link:../shared
+      '@wharfkit/wallet-plugin-cloudwallet': 1.2.0
     devDependencies:
       '@rollup/plugin-alias': 3.1.9_rollup@2.79.1
       '@rollup/plugin-commonjs': 22.0.2_rollup@2.79.1
@@ -184,7 +186,7 @@ importers:
       rollup-plugin-cleanup: 3.2.1_rollup@2.79.1
       rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.5
       rollup-plugin-terser: 7.0.2_rollup@2.79.1
-      ts-node: 10.9.1_typescript@4.9.5
+      ts-node: 10.9.2_typescript@4.9.5
       tsconfig-paths: 4.2.0
       typescript: 4.9.5
 
@@ -244,7 +246,7 @@ packages:
     dependencies:
       '@jridgewell/set-array': 1.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
-      '@jridgewell/trace-mapping': 0.3.20
+      '@jridgewell/trace-mapping': 0.3.21
     dev: true
 
   /@jridgewell/resolve-uri/3.1.1:
@@ -261,15 +263,15 @@ packages:
     resolution: {integrity: sha512-UTYAUj/wviwdsMfzoSJspJxbkH5o1snzwX0//0ENX1u/55kkZZkcTZP6u9bwKGkv+dkk9at4m1Cpt0uY80kcpQ==}
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.20
+      '@jridgewell/trace-mapping': 0.3.21
     dev: true
 
   /@jridgewell/sourcemap-codec/1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
     dev: true
 
-  /@jridgewell/trace-mapping/0.3.20:
-    resolution: {integrity: sha512-R8LcPeWZol2zR8mmH3JeKQ6QRCFb7XgUhV9ZlGhHLGyg4wpPiPZNQOOWhFZhxKw8u//yTbNGI42Bx/3paXEQ+Q==}
+  /@jridgewell/trace-mapping/0.3.21:
+    resolution: {integrity: sha512-SRfKmRe1KvYnxjEMtxEr+J4HIeMX5YBg/qhRHpxEIGjhX1rshcHlnFUE9K0GazhVKWM7B+nARSkV8LuvJdJ5/g==}
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -411,8 +413,8 @@ packages:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
     dev: true
 
-  /@types/node/20.10.4:
-    resolution: {integrity: sha512-D08YG6rr8X90YB56tSIuBaddy/UXAA9RKJoFvrsnogAum/0pmjkgi4+2nx96A330FmioegBWmEYQ+syqCFaveg==}
+  /@types/node/20.11.4:
+    resolution: {integrity: sha512-6I0fMH8Aoy2lOejL3s4LhyIYX34DPwY8bl5xlNjBvUEk8OHrcuzsFt+Ied4LvJihbtXPM+8zUqdydfIti86v9g==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -420,34 +422,34 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 20.10.4
+      '@types/node': 20.11.4
     dev: true
 
-  /@wharfkit/abicache/1.2.1:
-    resolution: {integrity: sha512-LPlD8U/+QUkXDqYrr2DRUa+VFUCR+muNOLUN1Uh3+TU2pbr4uKSt9EOBf3VkEAVov5BA96exysWCD1sp+K7orw==}
+  /@wharfkit/abicache/1.2.2:
+    resolution: {integrity: sha512-yOsYz2qQpQy7Nb8XZj62pZqp8YnmWDqFlrenYksBb9jl+1aWIpFhWd+14VEez4tUAezRH4UWW+w1SX5vhmUY9A==}
     dependencies:
-      '@wharfkit/antelope': 1.0.2
+      '@wharfkit/antelope': 1.0.4
       '@wharfkit/signing-request': 3.1.0
       pako: 2.1.0
       tslib: 2.6.2
     dev: false
 
-  /@wharfkit/account-creation-plugin-anchor/1.3.1_@wharfkit+session@1.2.1:
+  /@wharfkit/account-creation-plugin-anchor/1.3.1_@wharfkit+session@1.2.2:
     resolution: {integrity: sha512-WBlxSB0zVJdpbSWIpWOe8m8889ZjwoqRo5NOUX09P3bT2QR3xpqNhrANf2GQFVn3oaW7nLgl1HpkC48IHwitoQ==}
     peerDependencies:
       '@wharfkit/session': ^1.1.0
     dependencies:
       '@greymass/create-account': github.com/greymass/create-account/4a52356710d7057aa207532d1975ed7f40bdb881
-      '@wharfkit/session': 1.2.1
+      '@wharfkit/session': 1.2.2
       tslib: 2.6.2
     dev: false
 
   /@wharfkit/account/1.0.0:
     resolution: {integrity: sha512-I+5iT0DnE0oYQm9v/E+VIgyN+zd1jy8bbaJGxV2rAmHBPn48NKO9PV0EGWgZ8pfNvx/Tf5fG1kZpIbmTQ8Q+8A==}
     dependencies:
-      '@wharfkit/antelope': 1.0.2
-      '@wharfkit/common': 1.2.0_@wharfkit+antelope@1.0.2
-      '@wharfkit/contract': 1.1.1
+      '@wharfkit/antelope': 1.0.4
+      '@wharfkit/common': 1.2.0_@wharfkit+antelope@1.0.4
+      '@wharfkit/contract': 1.1.2
       '@wharfkit/resources': 1.2.0
       '@wharfkit/token': 1.0.1
       tslib: 2.6.2
@@ -463,8 +465,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@wharfkit/antelope/1.0.2:
-    resolution: {integrity: sha512-Oad6w0xg+3DyKqOhXcpEiyhZXizcoqdKX0UO6+YsjMZ4+qs16++Uq2YcxUeOHTpSeh2RM4EtX8qijyF5JzUg4w==}
+  /@wharfkit/antelope/1.0.4:
+    resolution: {integrity: sha512-FGB7YiTRz86T2V8XJNJGrrNBnIx9y+DV9MqXNwEHBwxzmXdA8Gurk7AQ5RfIQEllJeZbeMd6BeRT1nxQUUTRwQ==}
     dependencies:
       bn.js: 4.12.0
       brorand: 1.1.0
@@ -474,45 +476,44 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@wharfkit/common/1.2.0_@wharfkit+antelope@1.0.2:
+  /@wharfkit/common/1.2.0_@wharfkit+antelope@1.0.4:
     resolution: {integrity: sha512-me/BN8D/4UPkY7yt+4v+E/z62PVj4VKY5+iRb7zoWv0epbW4o4nC6Oer8kBVL7xWC6Guucaol3hkxkTMgrnwlQ==}
     peerDependencies:
       '@wharfkit/antelope': ^1.0.0
     dependencies:
-      '@wharfkit/antelope': 1.0.2
+      '@wharfkit/antelope': 1.0.4
       tslib: 2.6.2
     dev: false
 
-  /@wharfkit/contract/1.1.1:
-    resolution: {integrity: sha512-WN6tzVuuacpzD8yo4uZZPdniXk9Q+ZGkBtUQ+mbeOQaEzrsnncOrHJlck20nmSb/EC8ij1EG0xlhnyhKjnvSYQ==}
+  /@wharfkit/contract/1.1.2:
+    resolution: {integrity: sha512-Ephe9p/aUl+ZycKNFZO5zXGqhlZCxly2MAFtJ9vx8SvhLRJidrmNB0rrGtbPwfJnoNcTfwidnYu/J8LTcvXoew==}
     dependencies:
-      '@wharfkit/abicache': 1.2.1
-      '@wharfkit/antelope': 1.0.2
+      '@wharfkit/abicache': 1.2.2
+      '@wharfkit/antelope': 1.0.4
       '@wharfkit/signing-request': 3.1.0
       tslib: 2.6.2
     dev: false
 
-  /@wharfkit/protocol-esr/1.1.0_@wharfkit+session@1.2.1:
+  /@wharfkit/protocol-esr/1.1.0_@wharfkit+session@1.2.2:
     resolution: {integrity: sha512-HON8TOECA3gIj1kulJIyVpNmpmKs9E/tOXU433hPmQaL0o+xXCJfVV56o8NCRYvyH80SwgspJgENchFSJ+BJZA==}
     peerDependencies:
       '@wharfkit/session': ^1.1.0
     dependencies:
       '@greymass/buoy': 1.0.4
       '@greymass/miniaes': 1.0.0
-      '@wharfkit/session': 1.2.1
-      isomorphic-ws: 5.0.0_ws@8.14.2
-      ws: 8.14.2
+      '@wharfkit/session': 1.2.2
+      isomorphic-ws: 5.0.0_ws@8.16.0
+      ws: 8.16.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
     dev: false
 
-  /@wharfkit/protocol-scatter/1.1.0_@wharfkit+session@1.2.1:
+  /@wharfkit/protocol-scatter/1.1.0:
     resolution: {integrity: sha512-31x6IZpwKnNu7V3ws5Fpq/cI3CW1Lw1j4SoNfToB/H2hEZFgv17N40MiVvf3qWsItD18qbToaCj3zag2JFX+4g==}
     peerDependencies:
       '@wharfkit/session': ^1.1.0
     dependencies:
-      '@wharfkit/session': 1.2.1
       eosjs: 20.0.0
       scatter-ts: 0.1.9
       tslib: 2.6.2
@@ -521,17 +522,17 @@ packages:
   /@wharfkit/resources/1.2.0:
     resolution: {integrity: sha512-ZJx+U3BQLHzmCR0ASSuoI74X0Cdq3iiFD1fueBeF02E9nlFiw831SPD9lOrp90c9aKleniMzJdF68ygDfO7Nng==}
     dependencies:
-      '@wharfkit/antelope': 1.0.2
+      '@wharfkit/antelope': 1.0.4
       bn.js: 4.12.0
       tslib: 2.6.2
     dev: false
 
-  /@wharfkit/session/1.2.1:
-    resolution: {integrity: sha512-4NG2OrKAFEpFUzD7uHtnmnzi3S+eQhJ0ZCid9AYVfxb1PeXFl9YlEVcCwylG2pRTlwoaVir4onkp4rGzpawzzw==}
+  /@wharfkit/session/1.2.2:
+    resolution: {integrity: sha512-tkeuTq8AltJmVj7uos04vKhgNL7gFuq0VnrE7E+mAVFqpatr6XVT5/ShWrQxCDubHXraKK6nnZ6inUlETQkc9w==}
     dependencies:
-      '@wharfkit/abicache': 1.2.1
-      '@wharfkit/antelope': 1.0.2
-      '@wharfkit/common': 1.2.0_@wharfkit+antelope@1.0.2
+      '@wharfkit/abicache': 1.2.2
+      '@wharfkit/antelope': 1.0.4
+      '@wharfkit/common': 1.2.0_@wharfkit+antelope@1.0.4
       '@wharfkit/signing-request': 3.1.0
       pako: 2.1.0
       tslib: 2.6.2
@@ -540,76 +541,74 @@ packages:
   /@wharfkit/signing-request/3.1.0:
     resolution: {integrity: sha512-aVWV9Z3o77uDrFSR3wC78c1e/QNkfi3IxZbGzMizvoYTYPKHgHs1F6Go/1oe0Dlo/kEB9tgckFviccUqrK987w==}
     dependencies:
-      '@wharfkit/antelope': 1.0.2
+      '@wharfkit/antelope': 1.0.4
       tslib: 2.6.2
     dev: false
 
   /@wharfkit/token/1.0.1:
     resolution: {integrity: sha512-vwGaNiZvVf2X64BQLcObF5TxVZhmym1l6vQsNlTrNA225EhLEY15FI8W2HJ9/TrrTj3ZjPbzXtnQWedGsc41wg==}
     dependencies:
-      '@wharfkit/antelope': 1.0.2
-      '@wharfkit/contract': 1.1.1
+      '@wharfkit/antelope': 1.0.4
+      '@wharfkit/contract': 1.1.2
       bn.js: 4.12.0
       tslib: 2.6.2
     dev: false
 
-  /@wharfkit/transact-plugin-resource-provider/1.1.0_@wharfkit+session@1.2.1:
+  /@wharfkit/transact-plugin-resource-provider/1.1.0_@wharfkit+session@1.2.2:
     resolution: {integrity: sha512-N+ZcrTy8EUcIw48Uf7nYzMz3xS5EJvVPq/TS4Nz8dwGJrZyTGGPF4pqjF5u8qKIGebyAYMCyAiStZBKQX4QlNw==}
     peerDependencies:
       '@wharfkit/session': ^1.1.0
     dependencies:
-      '@wharfkit/session': 1.2.1
+      '@wharfkit/session': 1.2.2
       tslib: 2.6.2
     dev: false
 
-  /@wharfkit/wallet-plugin-anchor/1.1.0_@wharfkit+session@1.2.1:
+  /@wharfkit/wallet-plugin-anchor/1.1.0_@wharfkit+session@1.2.2:
     resolution: {integrity: sha512-gFyho2EPVztOmYJbEUG/vtt/VUjfMsy9n0Uz3wT9dXiTvg+J0fOplBBbsM9Dq8TuimDiX8VfxAuMrzW3QURlRw==}
     peerDependencies:
       '@wharfkit/session': ^1.1.0
     dependencies:
-      '@wharfkit/protocol-esr': 1.1.0_@wharfkit+session@1.2.1
-      '@wharfkit/session': 1.2.1
-      isomorphic-ws: 5.0.0_ws@8.14.2
-      ws: 8.14.2
+      '@wharfkit/protocol-esr': 1.1.0_@wharfkit+session@1.2.2
+      '@wharfkit/session': 1.2.2
+      isomorphic-ws: 5.0.0_ws@8.16.0
+      ws: 8.16.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
     dev: false
 
-  /@wharfkit/wallet-plugin-cloudwallet/1.1.0_@wharfkit+session@1.2.1:
-    resolution: {integrity: sha512-b00qATPDarctL7xGwi27ks1w2c0Nb6pZdIqNjM7/c8pShShu5TyvcBopZ9hIpCz+Br88gAf2t3FUfuYQNwo7Xw==}
+  /@wharfkit/wallet-plugin-cloudwallet/1.2.0:
+    resolution: {integrity: sha512-W2bEYKhzLTJjbqgxEkahYD0/hfK/i81yT8Jcz66w+6JJal9/tO7HtGW2Gp3t1avZd3SEG/kWJLQIC4+BTvucGA==}
     peerDependencies:
-      '@wharfkit/session': ^1.1.0
+      '@wharfkit/session': ^1.2.2
     dependencies:
-      '@wharfkit/session': 1.2.1
       tslib: 2.6.2
     dev: false
 
-  /@wharfkit/wallet-plugin-wombat/1.1.0_@wharfkit+session@1.2.1:
-    resolution: {integrity: sha512-WG38+toFJaqrVV+O37lWWPGAa+sOXBCkG45c9sLrCfHsReUa2JVF/pdKsE3vbiKFLwtIb5G8lxYZ3+0CSFbrmw==}
+  /@wharfkit/wallet-plugin-wombat/1.2.2:
+    resolution: {integrity: sha512-PSI3G7SufLcU4X6aIg2kIVRPm5qvtYCn2+FYPghQEwirhWqLAXn+OyYYLHuihu0sHfpFFL9rDJg62WHMkDFQfQ==}
     peerDependencies:
-      '@wharfkit/session': ^1.1.0
+      '@wharfkit/session': ^1.2.2
     dependencies:
-      '@wharfkit/protocol-scatter': 1.1.0_@wharfkit+session@1.2.1
-      '@wharfkit/session': 1.2.1
+      '@wharfkit/protocol-scatter': 1.1.0
       tslib: 2.6.2
     dev: false
 
-  /@wharfkit/web-renderer/1.1.1_@wharfkit+session@1.2.1:
-    resolution: {integrity: sha512-me7NJ2btuYmWWUJlrVcyHbCzweVToGbxBOYvpsLsfNhj6zKJcVu40YGMdBBsGNqWDDzdZ+JgpDqNGRWfSWr+YQ==}
+  /@wharfkit/web-renderer/1.1.5_@wharfkit+session@1.2.2:
+    resolution: {integrity: sha512-41+2clvHRSzDYULPDCHzlgP42aeX7UBkw7uNSybru3+0szrnxncr3LR3vbVS1iiXJJnaOy9o2J5ji2W5JlnF9w==}
     peerDependencies:
       '@wharfkit/session': ^1.0.1
     dependencies:
-      '@wharfkit/session': 1.2.1
+      '@wharfkit/session': 1.2.2
     dev: false
 
-  /acorn-walk/8.3.1:
-    resolution: {integrity: sha512-TgUZgYvqZprrl7YldZNoa9OciCAyZR+Ejm9eXzKCmjsF5IKp/wgQ7Z/ZpjpGTIUPwrHQIcYeI8qDh4PsEwxMbw==}
+  /acorn-walk/8.3.2:
+    resolution: {integrity: sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==}
     engines: {node: '>=0.4.0'}
     dev: true
 
-  /acorn/8.11.2:
-    resolution: {integrity: sha512-nc0Axzp/0FILLEVsm4fNwLCwMttvhEI263QtVPQcbpfZZ3ts0hLsZGOpE6czNlid7CJ9MlyH8reXkpsf3YUY4w==}
+  /acorn/8.11.3:
+    resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
@@ -990,19 +989,19 @@ packages:
       ws: 6.2.2
     dev: false
 
-  /isomorphic-ws/5.0.0_ws@8.14.2:
+  /isomorphic-ws/5.0.0_ws@8.16.0:
     resolution: {integrity: sha512-muId7Zzn9ywDsyXgTIafTry2sV3nySZeUDe6YedVd1Hvuuep5AsIlqK+XefWpYTyJG5e503F2xIuT2lcU6rCSw==}
     peerDependencies:
       ws: '*'
     dependencies:
-      ws: 8.14.2
+      ws: 8.16.0
     dev: false
 
   /jest-worker/26.6.2:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.10.4
+      '@types/node': 20.11.4
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -1187,7 +1186,7 @@ packages:
       jest-worker: 26.6.2
       rollup: 2.79.1
       serialize-javascript: 4.0.0
-      terser: 5.25.0
+      terser: 5.26.0
     dev: true
 
   /rollup-pluginutils/2.8.2:
@@ -1288,13 +1287,13 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /terser/5.25.0:
-    resolution: {integrity: sha512-we0I9SIsfvNUMP77zC9HG+MylwYYsGFSBG8qm+13oud2Yh+O104y614FRbyjpxys16jZwot72Fpi827YvGzuqg==}
+  /terser/5.26.0:
+    resolution: {integrity: sha512-dytTGoE2oHgbNV9nTzgBEPaqAWvcJNl66VZ0BkJqlvp71IjO8CxdBx/ykCNb47cLnCmCvRZ6ZR0tLkqvZCdVBQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
       '@jridgewell/source-map': 0.3.5
-      acorn: 8.11.2
+      acorn: 8.11.3
       commander: 2.20.3
       source-map-support: 0.5.21
     dev: true
@@ -1304,8 +1303,8 @@ packages:
     deprecated: no longer maintained
     dev: false
 
-  /ts-node/10.9.1_typescript@4.9.5:
-    resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
+  /ts-node/10.9.2_typescript@4.9.5:
+    resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
     hasBin: true
     peerDependencies:
       '@swc/core': '>=1.2.50'
@@ -1323,8 +1322,8 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      acorn: 8.11.2
-      acorn-walk: 8.3.1
+      acorn: 8.11.3
+      acorn-walk: 8.3.2
       arg: 4.1.3
       create-require: 1.1.1
       diff: 4.0.2
@@ -1375,8 +1374,8 @@ packages:
       async-limiter: 1.0.1
     dev: false
 
-  /ws/8.14.2:
-    resolution: {integrity: sha512-wEBG1ftX4jcglPxgFCMJmZ2PLtSbJ2Peg6TmpJFTbe9GZYOQCDPdMYu/Tm0/bGZkw8paZnJY45J4K2PZrLYq8g==}
+  /ws/8.16.0:
+    resolution: {integrity: sha512-HS0c//TP7Ina87TfiPUz1rQzMhHrl/SG2guqRcTOIUYD2q8uhUdNHZYJUaQ8aTGPzCh+c6oawMKW35nFl1dxyQ==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1

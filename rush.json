@@ -6,28 +6,36 @@
 
   "pnpmVersion": "6.7.1",
   
-  "nodeSupportedVersionRange": ">=14.15.0 <15.0.0 || >=16.13.0 <17.0.0 || >=18.15.0 <19.0.0",
+  "nodeSupportedVersionRange": ">=14.15.0",
 
   "projects": [
     {
       "packageName": "@wharfkit/starter",
-      "projectFolder": "shared"
+      "projectFolder": "shared",
+      "shouldPublish": true
     },
     {
       "packageName": "@wharfkit/starter-jungle",
-      "projectFolder": "jungle"
+      "projectFolder": "jungle",
+      "shouldPublish": true
     },
     {
       "packageName": "@wharfkit/starter-eos",
-      "projectFolder": "eos"
+      "projectFolder": "eos",
+      "shouldPublish": true
     },
     {
       "packageName": "@wharfkit/starter-wax",
-      "projectFolder": "wax"
+      "projectFolder": "wax",
+      "shouldPublish": true
     },
     {
       "packageName": "@wharfkit/starter-telos",
-      "projectFolder": "telos"
+      "projectFolder": "telos",
+      "shouldPublish": true
     }
-  ]
+  ],
+  "repository": {
+    "url": "git@github.com:wharfkit/starter.git"
+  }
 }
