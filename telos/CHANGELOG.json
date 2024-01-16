@@ -1,0 +1,17 @@
+{
+  "name": "@wharfkit/starter-telos",
+  "entries": [
+    {
+      "version": "1.1.0",
+      "tag": "@wharfkit/starter-telos_v1.1.0",
+      "date": "Tue, 16 Jan 2024 22:34:52 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "added sessionKit instance and missing plugins"
+          }
+        ]
+      }
+    }
+  ]
+}
