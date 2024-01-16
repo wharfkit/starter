@@ -19,16 +19,16 @@
       "projectFolder": "jungle",
       "shouldPublish": true
     },
-    // {
-    //   "packageName": "@wharfkit/starter-eos",
-    //   "projectFolder": "eos",
-    //   "shouldPublish": true
-    // },
-    // {
-    //   "packageName": "@wharfkit/starter-wax",
-    //   "projectFolder": "wax",
-    //   "shouldPublish": true
-    // },
+    {
+      "packageName": "@wharfkit/starter-eos",
+      "projectFolder": "eos",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@wharfkit/starter-wax",
+      "projectFolder": "wax",
+      "shouldPublish": true
+    },
     {
       "packageName": "@wharfkit/starter-telos",
       "projectFolder": "telos",
