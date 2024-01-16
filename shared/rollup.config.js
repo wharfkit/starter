@@ -1,4 +1,3 @@
-import dts from 'rollup-plugin-dts'
 import typescript from '@rollup/plugin-typescript'
 import cleanup from 'rollup-plugin-cleanup'
 import pkg from './package.json'
@@ -27,10 +26,5 @@ export default [
         },
         plugins: [typescript({target: 'es2020'}), cleanup({extensions: ['js', 'ts']})],
         external,
-    },
-    {
-        input: 'src/index.ts',
-        output: {file: pkg.types, format: 'esm'},
-        plugins: [dts(), cleanup({extensions: ['d.ts']})],
     },
 ]

@@ -1,4 +1,4 @@
-# Change Log - @wharfkit/starter
+# Change Log - @wharfkit/starter-eos
 
 This log was last generated on Tue, 16 Jan 2024 23:38:55 GMT and should not be manually modified.
 
@@ -10,7 +10,7 @@ Tue, 16 Jan 2024 23:38:55 GMT
 - Fixing build process
 
 ## 1.1.0
-Tue, 16 Jan 2024 18:21:21 GMT
+Tue, 16 Jan 2024 22:34:52 GMT
 
 ### Minor changes
 

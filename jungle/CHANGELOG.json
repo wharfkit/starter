@@ -1,9 +1,9 @@
 {
-  "name": "@wharfkit/starter",
+  "name": "@wharfkit/starter-jungle",
   "entries": [
     {
       "version": "1.1.1",
-      "tag": "@wharfkit/starter_v1.1.1",
+      "tag": "@wharfkit/starter-jungle_v1.1.1",
       "date": "Tue, 16 Jan 2024 23:38:55 GMT",
       "comments": {
         "patch": [
@@ -11,17 +11,17 @@
             "comment": "Fixing build process"
           }
         ],
-        "none": [
+        "dependency": [
           {
-            "comment": "Testing publishing"
+            "comment": "Updating dependency \"@wharfkit/starter\" to `1.1.1`"
           }
         ]
       }
     },
     {
       "version": "1.1.0",
-      "tag": "@wharfkit/starter_v1.1.0",
-      "date": "Tue, 16 Jan 2024 18:21:21 GMT",
+      "tag": "@wharfkit/starter-jungle_v1.1.0",
+      "date": "Tue, 16 Jan 2024 22:34:52 GMT",
       "comments": {
         "minor": [
           {
