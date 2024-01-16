@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@wharfkit/starter",
+      "comment": "Testing publishing",
+      "type": "none"
+    }
+  ],
+  "packageName": "@wharfkit/starter"
+}
