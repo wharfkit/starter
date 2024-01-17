@@ -19,11 +19,11 @@ codegen:
 
 .PHONY: change
 change:
-	rush change --message "$(message)" --commit-message "$(message)" --bulk --bump-type "${bump}" -b origin/main
+	rush change --bulk --message "$(message)" --commit-message "$(message)" --bump-type "${bump}" -b origin/main
 
 .PHONY: publish
 publish:
-	rush publish --publish --apply -b main
+	rush publish --publish --apply -b origin/main
 
 dev:
 	yarn --cwd webapp/ dev
