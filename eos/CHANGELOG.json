@@ -2,6 +2,21 @@
   "name": "@wharfkit/starter-eos",
   "entries": [
     {
+      "version": "1.2.1",
+      "tag": "@wharfkit/starter-eos_v1.2.1",
+      "date": "Wed, 17 Jan 2024 00:12:54 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Added Scatter to EOS"
+          },
+          {
+            "comment": "Added Scatter to EOS"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.2.0",
       "tag": "@wharfkit/starter-eos_v1.2.0",
       "date": "Wed, 17 Jan 2024 00:10:47 GMT",

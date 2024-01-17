@@ -1,6 +1,14 @@
 # Change Log - @wharfkit/starter-eos
 
-This log was last generated on Wed, 17 Jan 2024 00:10:47 GMT and should not be manually modified.
+This log was last generated on Wed, 17 Jan 2024 00:12:54 GMT and should not be manually modified.
+
+## 1.2.1
+Wed, 17 Jan 2024 00:12:54 GMT
+
+### Patches
+
+- Added Scatter to EOS
+- Added Scatter to EOS
 
 ## 1.2.0
 Wed, 17 Jan 2024 00:10:47 GMT
