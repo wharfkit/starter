@@ -19,7 +19,8 @@
     },
     "dependencies": {
         "@wharfkit/starter": "workspace:*",
-        "@wharfkit/wallet-plugin-wombat": "^1.2.1"
+        "@wharfkit/wallet-plugin-wombat": "^1.2.1",
+        "@wharfkit/wallet-plugin-tokenpocket": "~1.1.0"
     },
     "devDependencies": {
         "@rollup/plugin-alias": "^3.1.4",

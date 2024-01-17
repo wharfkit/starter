@@ -14,6 +14,7 @@ importers:
       '@rollup/plugin-typescript': ^10.0.1
       '@rollup/plugin-virtual': ^2.0.3
       '@wharfkit/starter': workspace:*
+      '@wharfkit/wallet-plugin-tokenpocket': ~1.1.0
       '@wharfkit/wallet-plugin-wombat': ^1.2.1
       rollup: ^2.70.2
       rollup-plugin-cleanup: ^3.2.1
@@ -24,6 +25,7 @@ importers:
       typescript: ^4.1.2
     dependencies:
       '@wharfkit/starter': link:../shared
+      '@wharfkit/wallet-plugin-tokenpocket': 1.1.0
       '@wharfkit/wallet-plugin-wombat': 1.2.2
     devDependencies:
       '@rollup/plugin-alias': 3.1.9_rollup@2.79.1
@@ -582,6 +584,15 @@ packages:
     peerDependencies:
       '@wharfkit/session': ^1.2.2
     dependencies:
+      tslib: 2.6.2
+    dev: false
+
+  /@wharfkit/wallet-plugin-tokenpocket/1.1.0:
+    resolution: {integrity: sha512-cOWdgLsQl6dxw+7J0ZJHN23kLPRSIODyaTaiBJmCeZZdLQMDiCnC6d2D2N8eHqo8RRH4+roVRNyubCPg9FFkYg==}
+    peerDependencies:
+      '@wharfkit/session': ^1.1.0
+    dependencies:
+      '@wharfkit/protocol-scatter': 1.1.0
       tslib: 2.6.2
     dev: false
 
