@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Cleanup",
+      "type": "patch",
+      "packageName": "@wharfkit/starter-wax"
+    }
+  ],
+  "packageName": "@wharfkit/starter-wax",
+  "email": "aaron@greymass.com"
+}
