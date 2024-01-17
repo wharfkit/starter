@@ -1,17 +1,16 @@
 export * from '@wharfkit/starter'
 
 import {
-    // AccountKit,
     APIClient,
-    // Chains,
     ContractKit,
     SessionKit,
     TransactPluginResourceProvider,
     WalletPluginAnchor,
     WebRenderer,
 } from '@wharfkit/starter'
-import {WalletPluginWombat} from '@wharfkit/wallet-plugin-wombat'
+import {WalletPluginScatter} from '@wharfkit/wallet-plugin-scatter'
 import {WalletPluginTokenPocket} from '@wharfkit/wallet-plugin-tokenpocket'
+import {WalletPluginWombat} from '@wharfkit/wallet-plugin-wombat'
 
 const chainUrl = 'https://eos.greymass.com'
 
@@ -27,6 +26,7 @@ export const sessionKit = new SessionKit(
         ui: new WebRenderer(),
         walletPlugins: [
             new WalletPluginAnchor(),
+            new WalletPluginScatter(),
             new WalletPluginTokenPocket(),
             new WalletPluginWombat(),
         ],
