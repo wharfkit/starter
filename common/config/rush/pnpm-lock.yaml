@@ -135,6 +135,7 @@ importers:
       '@rollup/plugin-typescript': ^10.0.1
       '@rollup/plugin-virtual': ^2.0.3
       '@wharfkit/starter': workspace:*
+      '@wharfkit/wallet-plugin-wombat': ~1.2.2
       rollup: ^2.70.2
       rollup-plugin-cleanup: ^3.2.1
       rollup-plugin-dts: ^4.2.1
@@ -144,6 +145,7 @@ importers:
       typescript: ^4.1.2
     dependencies:
       '@wharfkit/starter': link:../shared
+      '@wharfkit/wallet-plugin-wombat': 1.2.2
     devDependencies:
       '@rollup/plugin-alias': 3.1.9_rollup@2.79.1
       '@rollup/plugin-commonjs': 22.0.2_rollup@2.79.1
