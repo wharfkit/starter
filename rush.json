@@ -1,41 +1,40 @@
-
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+    "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
 
-  "rushVersion": "5.100.2",
+    "rushVersion": "5.100.2",
 
-  "pnpmVersion": "6.7.1",
-  
-  "nodeSupportedVersionRange": ">=14.15.0",
+    "pnpmVersion": "6.7.1",
 
-  "projects": [
-    {
-      "packageName": "@wharfkit/starter",
-      "projectFolder": "shared",
-      "shouldPublish": true
-    },
-    {
-      "packageName": "@wharfkit/starter-jungle",
-      "projectFolder": "jungle",
-      "shouldPublish": true
-    },
-    {
-      "packageName": "@wharfkit/starter-eos",
-      "projectFolder": "eos",
-      "shouldPublish": true
-    },
-    {
-      "packageName": "@wharfkit/starter-wax",
-      "projectFolder": "wax",
-      "shouldPublish": true
-    },
-    {
-      "packageName": "@wharfkit/starter-telos",
-      "projectFolder": "telos",
-      "shouldPublish": true
+    "nodeSupportedVersionRange": ">=14.15.0",
+
+    "projects": [
+        {
+            "packageName": "@wharfkit/starter",
+            "projectFolder": "shared",
+            "shouldPublish": true
+        },
+        {
+            "packageName": "@wharfkit/starter-jungle",
+            "projectFolder": "jungle",
+            "shouldPublish": true
+        },
+        {
+            "packageName": "@wharfkit/starter-eos",
+            "projectFolder": "eos",
+            "shouldPublish": true
+        },
+        {
+            "packageName": "@wharfkit/starter-wax",
+            "projectFolder": "wax",
+            "shouldPublish": true
+        },
+        {
+            "packageName": "@wharfkit/starter-telos",
+            "projectFolder": "telos",
+            "shouldPublish": true
+        }
+    ],
+    "repository": {
+        "url": "git@github.com:wharfkit/starter.git"
     }
-  ],
-  "repository": {
-    "url": "git@github.com:wharfkit/starter.git"
-  }
 }
