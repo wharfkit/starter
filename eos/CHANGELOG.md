@@ -1,6 +1,20 @@
 # Change Log - @wharfkit/starter-eos
 
-This log was last generated on Tue, 16 Jan 2024 23:38:55 GMT and should not be manually modified.
+This log was last generated on Wed, 17 Jan 2024 00:36:06 GMT and should not be manually modified.
+
+## 1.2.0
+Wed, 17 Jan 2024 00:36:06 GMT
+
+### Minor changes
+
+- Added tokenpocket
+
+### Patches
+
+- Added Scatter to EOS
+- Added Wombat to Telos
+- Added Wombat to Telos
+- Cleanup
 
 ## 1.1.1
 Tue, 16 Jan 2024 23:38:55 GMT

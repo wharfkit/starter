@@ -2,6 +2,18 @@
   "name": "@wharfkit/starter",
   "entries": [
     {
+      "version": "1.1.2",
+      "tag": "@wharfkit/starter_v1.1.2",
+      "date": "Wed, 17 Jan 2024 00:36:06 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Cleanup"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.1.1",
       "tag": "@wharfkit/starter_v1.1.1",
       "date": "Tue, 16 Jan 2024 23:38:55 GMT",

@@ -1,6 +1,13 @@
 # Change Log - @wharfkit/starter-jungle
 
-This log was last generated on Tue, 16 Jan 2024 23:38:55 GMT and should not be manually modified.
+This log was last generated on Wed, 17 Jan 2024 00:36:06 GMT and should not be manually modified.
+
+## 1.1.2
+Wed, 17 Jan 2024 00:36:06 GMT
+
+### Patches
+
+- Cleanup
 
 ## 1.1.1
 Tue, 16 Jan 2024 23:38:55 GMT
