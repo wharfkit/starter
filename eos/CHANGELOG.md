@@ -1,6 +1,13 @@
 # Change Log - @wharfkit/starter-eos
 
-This log was last generated on Wed, 17 Jan 2024 00:05:25 GMT and should not be manually modified.
+This log was last generated on Wed, 17 Jan 2024 00:06:58 GMT and should not be manually modified.
+
+## 1.3.0
+Wed, 17 Jan 2024 00:06:58 GMT
+
+### Minor changes
+
+- Added tokenpocket code to kit
 
 ## 1.2.0
 Wed, 17 Jan 2024 00:05:25 GMT
