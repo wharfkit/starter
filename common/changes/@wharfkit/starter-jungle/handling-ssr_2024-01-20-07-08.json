@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@wharfkit/starter-jungle",
+      "comment": "handling ssr",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@wharfkit/starter-jungle"
+}

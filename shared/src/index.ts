@@ -12,7 +12,7 @@ import {WalletPluginAnchor} from '@wharfkit/wallet-plugin-anchor'
 import {SessionKit} from '@wharfkit/session'
 import {TransactPluginResourceProvider} from '@wharfkit/transact-plugin-resource-provider'
 
-export const sessionKit = new SessionKit(
+export const sessionKit = typeof document !== 'undefined' ? new SessionKit(
     {
         appName: 'WharfKit App',
         chains: [
@@ -39,4 +39,4 @@ export const sessionKit = new SessionKit(
     {
         transactPlugins: [new TransactPluginResourceProvider()],
     }
-)
+) : undefined

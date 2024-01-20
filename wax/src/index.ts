@@ -15,7 +15,7 @@ import {WalletPluginWombat} from '@wharfkit/wallet-plugin-wombat'
 
 const chainUrl = 'https://wax.greymass.com'
 
-export const sessionKit = new SessionKit(
+export const sessionKit = typeof document !== 'undefined' ? new SessionKit(
     {
         appName: 'WharfKit App',
         chains: [
@@ -34,7 +34,7 @@ export const sessionKit = new SessionKit(
     {
         transactPlugins: [new TransactPluginResourceProvider()],
     }
-)
+) : undefined
 
 // Uncomment once we can get the Account Kit to work with rush monorepos
 // see https://github.com/microsoft/TypeScript/issues/42873
