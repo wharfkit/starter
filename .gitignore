@@ -69,6 +69,8 @@ common/temp/
 common/autoinstallers/*/.npmrc
 **/.rush/temp/
 .rush
+*.build.error.log
+*.build.log
 
 # Heft temporary files
 .heft
