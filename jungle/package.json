@@ -7,7 +7,7 @@
     "main": "lib/starter-jungle.js",
     "module": "lib/starter-jungle.m.js",
     "types": "lib/starter-jungle.d.ts",
-    "unpkg": "lib/starter-eos.bundle.js",
+    "unpkg": "lib/starter-jungle.bundle.js",
     "sideEffects": false,
     "files": [
         "lib/*",

@@ -156,6 +156,7 @@ importers:
       '@rollup/plugin-node-resolve': ^14.1.0
       '@rollup/plugin-typescript': ^10.0.1
       '@rollup/plugin-virtual': ^2.0.3
+      '@types/node': 20.11.13
       '@wharfkit/starter': workspace:*
       '@wharfkit/wallet-plugin-wombat': ~1.2.2
       rollup: ^2.70.2
@@ -176,11 +177,12 @@ importers:
       '@rollup/plugin-node-resolve': 14.1.0_rollup@2.79.1
       '@rollup/plugin-typescript': 10.0.1_030fb83018e2eed3485192c4da8ef9e7
       '@rollup/plugin-virtual': 2.1.0_rollup@2.79.1
+      '@types/node': 20.11.13
       rollup: 2.79.1
       rollup-plugin-cleanup: 3.2.1_rollup@2.79.1
       rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.5
       rollup-plugin-terser: 7.0.2_rollup@2.79.1
-      ts-node: 10.9.2_typescript@4.9.5
+      ts-node: 10.9.2_f9e3704684e4ed028f3e6b9537246514
       tsconfig-paths: 4.2.0
       tslib: 2.6.2
       typescript: 4.9.5
@@ -535,8 +537,8 @@ packages:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
     dev: true
 
-  /@types/node/20.11.4:
-    resolution: {integrity: sha512-6I0fMH8Aoy2lOejL3s4LhyIYX34DPwY8bl5xlNjBvUEk8OHrcuzsFt+Ied4LvJihbtXPM+8zUqdydfIti86v9g==}
+  /@types/node/20.11.13:
+    resolution: {integrity: sha512-5G4zQwdiQBSWYTDAH1ctw2eidqdhMJaNsiIDKHFr55ihz5Trl2qqR8fdrT732yPBho5gkNxXm67OxWFBqX9aPg==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -544,7 +546,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 20.11.4
+      '@types/node': 20.11.13
     dev: true
 
   /@types/semver/7.5.6:
@@ -1684,7 +1686,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.11.4
+      '@types/node': 20.11.13
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -2222,6 +2224,37 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: true
+
+  /ts-node/10.9.2_f9e3704684e4ed028f3e6b9537246514:
+    resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
+    hasBin: true
+    peerDependencies:
+      '@swc/core': '>=1.2.50'
+      '@swc/wasm': '>=1.2.50'
+      '@types/node': '*'
+      typescript: '>=2.7'
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      '@swc/wasm':
+        optional: true
+    dependencies:
+      '@cspotcode/source-map-support': 0.8.1
+      '@tsconfig/node10': 1.0.9
+      '@tsconfig/node12': 1.0.11
+      '@tsconfig/node14': 1.0.3
+      '@tsconfig/node16': 1.0.4
+      '@types/node': 20.11.13
+      acorn: 8.11.3
+      acorn-walk: 8.3.2
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      typescript: 4.9.5
+      v8-compile-cache-lib: 3.0.1
+      yn: 3.1.1
     dev: true
 
   /ts-node/10.9.2_typescript@4.9.5:
