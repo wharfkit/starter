@@ -1,6 +1,15 @@
 # Change Log - @wharfkit/starter-telos
 
-This log was last generated on Tue, 16 Jan 2024 23:38:55 GMT and should not be manually modified.
+This log was last generated on Wed, 31 Jan 2024 06:03:24 GMT and should not be manually modified.
+
+## 1.1.2
+Wed, 31 Jan 2024 06:03:24 GMT
+
+### Patches
+
+- handling ssr
+- Added Wombat to Telos
+- Cleanup
 
 ## 1.1.1
 Tue, 16 Jan 2024 23:38:55 GMT
