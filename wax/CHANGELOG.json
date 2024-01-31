@@ -2,6 +2,26 @@
   "name": "@wharfkit/starter-wax",
   "entries": [
     {
+      "version": "1.1.2",
+      "tag": "@wharfkit/starter-wax_v1.1.2",
+      "date": "Wed, 31 Jan 2024 22:22:52 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "handling ssr"
+          },
+          {
+            "comment": "Cleanup"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@wharfkit/starter\" to `1.1.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.1.1",
       "tag": "@wharfkit/starter-wax_v1.1.1",
       "date": "Tue, 16 Jan 2024 23:38:55 GMT",
