@@ -1,6 +1,14 @@
 # Change Log - @wharfkit/starter
 
-This log was last generated on Tue, 16 Jan 2024 23:38:55 GMT and should not be manually modified.
+This log was last generated on Wed, 31 Jan 2024 22:28:39 GMT and should not be manually modified.
+
+## 1.1.2
+Wed, 31 Jan 2024 22:28:39 GMT
+
+### Patches
+
+- handling ssr
+- Cleanup
 
 ## 1.1.1
 Tue, 16 Jan 2024 23:38:55 GMT

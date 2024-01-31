@@ -1,7 +1,7 @@
 {
     "name": "@wharfkit/starter-jungle",
     "description": "A Jungle 4 specific starter kit for WharfKit packages",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "homepage": "https://github.com/@wharfkit/starter-jungle",
     "license": "BSD-3-Clause",
     "main": "lib/starter-jungle.js",
