@@ -4,7 +4,7 @@
     {
       "version": "1.2.0",
       "tag": "@wharfkit/starter-eos_v1.2.0",
-      "date": "Wed, 31 Jan 2024 06:07:09 GMT",
+      "date": "Wed, 31 Jan 2024 22:35:53 GMT",
       "comments": {
         "patch": [
           {
@@ -30,7 +30,7 @@
         ],
         "dependency": [
           {
-            "comment": "Updating dependency \"@wharfkit/starter\" to `1.1.2`"
+            "comment": "Updating dependency \"@wharfkit/starter\" to `1.1.3`"
           }
         ]
       }

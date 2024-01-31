@@ -1,9 +1,9 @@
 # Change Log - @wharfkit/starter-wax
 
-This log was last generated on Wed, 31 Jan 2024 06:07:09 GMT and should not be manually modified.
+This log was last generated on Wed, 31 Jan 2024 22:35:53 GMT and should not be manually modified.
 
-## 1.1.2
-Wed, 31 Jan 2024 06:07:09 GMT
+## 1.1.3
+Wed, 31 Jan 2024 22:35:53 GMT
 
 ### Patches
 
