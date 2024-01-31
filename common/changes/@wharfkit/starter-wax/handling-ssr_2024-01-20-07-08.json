@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@wharfkit/starter-wax",
+      "comment": "handling ssr",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@wharfkit/starter-wax"
+}

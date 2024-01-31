@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@wharfkit/starter-telos",
+      "comment": "handling ssr",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@wharfkit/starter-telos"
+}

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@wharfkit/starter-eos",
+      "comment": "handling ssr",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@wharfkit/starter-eos"
+}
