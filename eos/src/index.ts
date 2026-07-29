@@ -20,13 +20,11 @@ export async function createSessionKit() {
 
     const {WalletPluginScatter} = await import('@wharfkit/wallet-plugin-scatter')
     const {WalletPluginTokenPocket} = await import('@wharfkit/wallet-plugin-tokenpocket')
-    const {WalletPluginWombat} = await import('@wharfkit/wallet-plugin-wombat')
 
     const walletPlugins = [
         new WalletPluginAnchor(),
         new WalletPluginScatter(),
         new WalletPluginTokenPocket(),
-        new WalletPluginWombat(),
     ]
 
     return new SessionKit(

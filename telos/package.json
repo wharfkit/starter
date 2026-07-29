@@ -18,8 +18,7 @@
         "build": "make lib"
     },
     "dependencies": {
-        "@wharfkit/starter": "workspace:*",
-        "@wharfkit/wallet-plugin-wombat": "~1.2.2"
+        "@wharfkit/starter": "workspace:*"
     },
     "devDependencies": {
         "@rollup/plugin-alias": "^3.1.4",

@@ -18,8 +18,6 @@ export async function createSessionKit(): Promise<SessionKit> {
         throw new Error('Telos createSessionKit can only be used in a browser environment')
     }
 
-    const {WalletPluginWombat} = await import('@wharfkit/wallet-plugin-wombat')
-
     return new SessionKit(
         {
             appName: 'WharfKit App',
@@ -30,7 +28,7 @@ export async function createSessionKit(): Promise<SessionKit> {
                 },
             ],
             ui: new WebRenderer(),
-            walletPlugins: [new WalletPluginAnchor(), new WalletPluginWombat()],
+            walletPlugins: [new WalletPluginAnchor()],
         },
         {
             transactPlugins: [new TransactPluginResourceProvider()],
